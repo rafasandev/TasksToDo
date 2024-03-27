@@ -1,0 +1,44 @@
+<form class="task__form" (ngSubmit)="updateTask()" [formGroup]="taskForm">
+  <div class="task__form__done form-check d-flex align-items-center p-0">
+    <input
+      id=" task{{ task!.id }} "
+      type="checkbox"
+      (change)="changeState($event, task!)"
+      [checked]="task!.finished"
+      class="form-check-input me-2"
+      placeholder="Título"
+    />
+    <label class="form-check-label" for=" task{{ task!.id }} ">Concluída</label>
+  </div>
+  <input class="form-control my-2" type="text" formControlName="taskTitle" />
+  <input
+    class="form-control my-2"
+    type="text"
+    formControlName="taskDescription"
+    *ngIf="(task?.description)!.length > 0 || openToEdit"
+    placeholder="Descrição"
+  />
+  <div class="task__form__date">
+    <p class="p-2 my-2 bg-info-subtle">Criada em: {{ task!.date | date }}</p>
+  </div>
+  <div class="task__box__update">
+    <button
+      class="task__edit"
+      *ngIf="!openToEdit"
+      type="submit"
+      [disabled]="taskState"
+      class="task__confirm btn btn-outline-success"
+    >
+      Editar
+    </button>
+    <button
+      *ngIf="openToEdit"
+      type="button"
+      (click)="saveTaskEdited()"
+      [disabled]="taskState"
+      class="task__confirm btn btn-outline-warning"
+    >
+      Confirmar
+    </button>
+  </div>
+</form>
