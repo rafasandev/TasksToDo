@@ -2,7 +2,7 @@ Project of tasks to do, build with Angular CLI, Bootstrap and aplication of Inde
 This project was proposed to increase my skills with Angular aplications, using Ng diretives, components and services with a local database.
 This project can be open by the link: 
 
-<a href="tasks-todo-ng.vercel.app">
+<a href="https://tasks-todo-ng.vercel.app">
   
   To do Tasks App
 
