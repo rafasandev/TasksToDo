@@ -1,4 +1,4 @@
-#To Do App
+# To Do App
 
 Project of tasks to be performed, built with Angular CLI, Bootstrap and IndexedDB.
 This project was proposed to increase my skills with Angular applications, using Ng directives, components and services with a local database.
