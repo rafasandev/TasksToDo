@@ -1,6 +1,8 @@
-Project of tasks to do, build with Angular CLI, Bootstrap and aplication of IndexedDB.
-This project was proposed to increase my skills with Angular aplications, using Ng diretives, components and services with a local database.
-This project can be open by the link: 
+#To Do App
+
+Project of tasks to be performed, built with Angular CLI, Bootstrap and IndexedDB.
+This project was proposed to increase my skills with Angular applications, using Ng directives, components and services with a local database.
+This project can be opened via the link:
 
 <a href="https://tasks-todo-ng.vercel.app">
   
